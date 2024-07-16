@@ -1,0 +1,5 @@
+node_modules
+coverage
+.vscode
+www/js
+www/css

@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"strict": true,
+		"lib": ["ESNext", "DOM"],
+		"module": "ESNext",
+		"target": "ESNext",
+		"moduleResolution": "Bundler",
+		"noEmit": true
+	}
+}

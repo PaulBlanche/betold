@@ -1,0 +1,28 @@
+{
+	"type": "module",
+	"scripts": {
+		"test": "web-test-runner --config=./web-test-runner.config.js"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.7.3",
+		"@chialab/wtr-mocha-reporter": "^0.18.0",
+		"@esm-bundle/chai": "^4.3.4-fix.0",
+		"@types/http-server": "^0.12.4",
+		"@types/mocha": "^10.0.6",
+		"@types/node": "^20.13.0",
+		"@web/test-runner": "^0.18.2",
+		"@web/test-runner-commands": "^0.9.0",
+		"@web/test-runner-playwright": "^0.11.0",
+		"esbuild": "^0.23.0",
+		"fft-windowing": "^0.1.4",
+		"http-server": "^14.1.1",
+		"mocha": "^10.4.0",
+		"typescript": "^5.5.2"
+	},
+	"dependencies": {
+		"@types/xxhashjs": "^0.2.4",
+		"htm": "^3.1.1",
+		"preact": "^10.22.0",
+		"xxhashjs": "^0.2.2"
+	}
+}

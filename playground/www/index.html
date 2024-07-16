@@ -1,0 +1,139 @@
+<head>
+    <script>new EventSource('/esbuild').addEventListener('change', () => location.reload())</script>
+    <script src="./js/index.js" type="module"></script>
+    <link rel="stylesheet" href="./css/index.css" />    
+</head>
+<button id="play">play</button>
+<button id="render">render</button>
+
+
+<style>
+    html {
+        font-family: 'monospace';
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    body {
+        background-color: #777;
+    }
+    .keyboard {
+        display: flex;
+        background: black;
+        border: 1px solid black;
+        border-bottom-width: 1px;
+        border-bottom-width: 3px;
+        gap: 0px 1px;
+        width: fit-content;
+
+        & .octave {
+            width: 251px;
+            display: grid;
+            gap: 0px 1px;
+            grid-template: 90px 60px / repeat(42, 5px);
+            height: 140px;
+            align-content: end;
+            overflow: hidden;
+        }
+
+        & .key {
+            border-radius: 5px;
+            border: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+
+            & .label {
+                font-size: 8px;
+                padding: 10px 0px;
+            }
+
+            &.white {
+                background-color: white;
+                grid-column-end: span 6;
+                grid-row: 1 / span 2;
+                z-index: 0;
+
+                & .label {
+                    opacity: 0.4;
+                    color: black;
+                }
+
+                &:hover {
+                    background-color: #EEE;
+
+                    .label {
+                        opacity: 1;
+                    }
+                }
+
+
+            }
+            
+            &.black {
+                background-color: black;
+                grid-column-end: span 4;
+                grid-row: 1 / span 1;
+                z-index: 1;
+
+                & .label {
+                    opacity: 0.6;
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: #333;
+                    
+                    .label {
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+            &:nth-child(1) {
+                grid-column-start: 1;
+            }
+            &:nth-child(2) {
+                grid-column-start: 5;
+            }
+            &:nth-child(3) {
+                grid-column-start: 7;
+            }
+            &:nth-child(4) {
+                grid-column-start: 11;
+            }
+            &:nth-child(5) {
+                grid-column-start: 13;
+            }
+            &:nth-child(6) {
+                grid-column-start: 19;
+            }
+            &:nth-child(7) {
+                grid-column-start: 23;
+            }
+            &:nth-child(8) {
+                grid-column-start: 25;
+            }
+            &:nth-child(9) {
+                grid-column-start: 29;
+            }
+            &:nth-child(10) {
+                grid-column-start: 31;
+            }
+            &:nth-child(11) {
+                grid-column-start: 34;
+            }
+            &:nth-child(12) {
+                grid-column-start: 37;
+            }
+
+        }
+    }
+</style>
+

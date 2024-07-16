@@ -1,0 +1,28 @@
+.range-input-selector, .text-input-selector {
+    display: block;
+}
+
+.range-input, .text-input {
+    display: none;
+}
+
+
+.container {
+    .range-input-selector:checked {
+        ~ .range-input  {
+            display: revert;
+        }
+        ~ .text-input  {
+            display: none;
+        }
+    }
+
+    .text-input-selector:checked {
+        ~ .range-input  {
+            display: none;
+        }
+        ~ .text-input  {
+            display: revert;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+options : 
+- audioworklet to reimplement oscillator with phase control
+    -> not efficient
+    -> flexible ?
+    -> A-rate phase
+- DelayNode to simulate phase shift
+    -> will delay oscillator start (no sound when expected) -> clicks
+    -> a-rate phase
+- All-pass filter to simulate phase shift
+    -> will alter the oscillator when transitioning to target phas
+    -> no clicks because continuity !
+    -> a-rate phase
+- periodicwave
